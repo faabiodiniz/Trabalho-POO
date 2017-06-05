@@ -1,0 +1,38 @@
+#ifndef PESSOA_H
+#define PESSOA_H
+#include <string>
+
+using namespace std;
+
+class Pessoa
+{
+	public:
+		Pessoa();
+		void setNome(string N) { nome = N; };
+		string setCPF(string CPF) { cpf = CPF; };
+		string setTelefone(int tel) { telefone = tel; };
+		string setEmail(string em) { email = em; };
+		int setDiaNasc(int dia) { diaNasc = dia; };
+		int setMesNasc(int mes) { mesNasc = mes; };
+		int setAnoNasc(int ano) { anoNasc = ano; };
+		string getNome() { return nome;	};
+		string getCPF() { return cpf; };
+		string getTelefone() { return telefone;	};
+		string getEmail() { return email; };
+		int getDiaNasc() { return diaNasc; };
+		int getMesNasc() { return mesNasc; };
+		int getAnoNasc() { return anoNasc; };
+		string getDataNasc();
+		void ImprimirDados();
+	private:
+		string nome;
+		string cpf;
+		string telefone;
+		string email;
+		int diaNasc;
+		int mesNasc;
+		int anoNasc;
+};
+
+#endif
+
